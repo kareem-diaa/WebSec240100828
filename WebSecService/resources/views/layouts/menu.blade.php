@@ -6,6 +6,7 @@
             <li class="nav-item"><a class="nav-link" href="/odd">Odd Numbers</a></li>
             <li class="nav-item"><a class="nav-link" href="/prime">Prime Numbers</a></li>
             <li class="nav-item"><a class="nav-link" href="/multable">Multiplication Table</a></li>
+            <li class="nav-item"><a class="nav-link" href="/minitest">MiniTest</a></li>
         </ul>
     </div>
 </nav>
