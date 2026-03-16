@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Web\UsersController;
+use App\Http\Controllers\Web\GradesController;
 
 Route::get('/', function () {
     return view('welcome'); //welcome.blade.php
@@ -110,3 +111,10 @@ Route::get('users',                  [UsersController::class, 'list'])  ->name('
 Route::get('users/edit/{user?}',     [UsersController::class, 'edit'])  ->name('users_edit');
 Route::post('users/save/{user?}',    [UsersController::class, 'save'])  ->name('users_save');
 Route::get('users/delete/{user}',    [UsersController::class, 'delete'])->name('users_delete');
+
+
+// ── Grades CRUD ─────────────────────────────────────────────
+Route::get('grades',                 [GradesController::class, 'list'])  ->name('grades_list');
+Route::get('grades/edit/{grade?}',   [GradesController::class, 'edit'])  ->name('grades_edit');
+Route::post('grades/save/{grade?}',  [GradesController::class, 'save'])  ->name('grades_save');
+Route::get('grades/delete/{grade}',  [GradesController::class, 'delete'])->name('grades_delete');

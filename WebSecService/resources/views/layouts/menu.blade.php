@@ -12,6 +12,7 @@
             <li class="nav-item"><a class="nav-link" href="/calculator">Calculator</a></li>
             <li class="nav-item"><a class="nav-link" href="/gpa-simulator">GPA Simulator</a></li>
             <li class="nav-item"><a class="nav-link" href="/users">Users</a></li>
+            <li class="nav-item"><a class="nav-link" href="/grades">Grades</a></li>
         </ul>
     </div>
 </nav>
