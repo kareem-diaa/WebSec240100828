@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Web\UsersController;
 
 Route::get('/', function () {
     return view('welcome'); //welcome.blade.php
@@ -102,3 +103,10 @@ Route::get('/gpa-simulator', function () {
     ];
     return view('gpa-simulator', compact('courses'));
 });
+
+
+// ── Users CRUD ──────────────────────────────────────────────
+Route::get('users',                  [UsersController::class, 'list'])  ->name('users_list');
+Route::get('users/edit/{user?}',     [UsersController::class, 'edit'])  ->name('users_edit');
+Route::post('users/save/{user?}',    [UsersController::class, 'save'])  ->name('users_save');
+Route::get('users/delete/{user}',    [UsersController::class, 'delete'])->name('users_delete');
